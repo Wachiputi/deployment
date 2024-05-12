@@ -37,10 +37,10 @@ selected_market = st.sidebar.selectbox('Select Market', markets)
 forecast_button = st.sidebar.button('Predict')
 
 # Define the path to the CSV file
-DATA_PATH = Path.cwd() / 'data' / 'wfp_food_prices_mwi.csv'
+#DATA_PATH = Path.cwd() / 'data' / 'wfp_food_prices_mwi.csv'
 
 # Read the data from the CSV file
-data = pd.read_csv(DATA_PATH)
+data = pd.read_csv('wfp_food_prices_mwi.csv')
 
 # Display the raw data using Streamlit
 st.subheader("Raw WFP Data")
